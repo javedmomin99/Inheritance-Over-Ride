@@ -15,7 +15,7 @@ class Car(Vehicle):
     def __init__(self, mileage, cost, tyres, hp):
         super().__init__(mileage,
                        cost)
-        # With this, we are telling the program that use data for mileage and cost from vehicle class as they are already defined before.
+        # With this, we are telling the program that use data for mileage and cost from vehicle class as they are already defined before. i.e., Over-Riding 
         self.tyres = tyres
         self.hp = hp
 
