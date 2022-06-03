@@ -2,7 +2,7 @@
 #Over-Riding init Method:
 # Create a Class and define its fuctions :
 class Vehicle:
-    def __init__(self, mileage, cost):
+    def __init__(self, mileage, cost):  #Passing More than 1 Parameter, Thats why using INIT Method.
         self.mileage = mileage
         self.cost = cost
 
@@ -12,7 +12,7 @@ class Vehicle:
         print("Cost of Vehicle is ", self.cost)
 
 class Car(Vehicle):
-    def __init__(self, mileage, cost, tyres, hp):
+    def __init__(self, mileage, cost, tyres, hp):   #Passing More than 1 Parameter, Thats why using INIT Method.
         super().__init__(mileage,
                        cost)
         # With this, we are telling the program that use data for mileage and cost from vehicle class as they are already defined before. i.e., Over-Riding 
